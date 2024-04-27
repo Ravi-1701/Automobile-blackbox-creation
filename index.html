@@ -6,100 +6,64 @@
     <title>Automobile Website</title>
     <style>
         /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <!-- Header content, such as logo and navigation menu -->
+        <h1>Automobile Website</h1>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#about-us">About Us</a> |
+            <a href="#automobiles">Automobiles</a> |
+            <a href="#vehicle-booking">Vehicle Booking</a> |
+            <a href="#tour-appointment">Tour Appointment</a>
+        </nav>
     </header>
 
     <main>
-        <home-page></home-page>
-        <about-us-page></about-us-page>
-        <automobiles-page></automobiles-page>
-        <vehicle-booking-page></vehicle-booking-page>
-        <tour-appointment-page></tour-appointment-page>
+        <section id="home">
+            <h1>Welcome to Our Automobile Website!</h1>
+            <!-- Additional content for the home page -->
+        </section>
+
+        <section id="about-us">
+            <h1>About Us</h1>
+            <!-- Additional content for the about us page -->
+        </section>
+
+        <section id="automobiles">
+            <h1>Automobiles</h1>
+            <!-- Additional content and car details/pictures -->
+        </section>
+
+        <section id="vehicle-booking">
+            <h1>Vehicle Booking</h1>
+            <!-- Additional content for the vehicle booking page -->
+        </section>
+
+        <section id="tour-appointment">
+            <h1>Tour Appointment</h1>
+            <!-- Additional content for the tour appointment page -->
+        </section>
     </main>
 
     <footer>
-        <!-- Footer content, such as copyright and contact information -->
+        <p>&copy; 2023 Automobile Website. All rights reserved.</p>
     </footer>
-
-    <script>
-        class HomePage extends HTMLElement {
-          constructor() {
-            super();
-          }
-
-          connectedCallback() {
-            this.innerHTML = `
-              <h1>Welcome to Our Automobile Website!</h1>
-              <!-- Additional content for the home page -->
-            `;
-          }
-        }
-
-        customElements.define('home-page', HomePage);
-
-        class AboutUsPage extends HTMLElement {
-          constructor() {
-            super();
-          }
-
-          connectedCallback() {
-            this.innerHTML = `
-              <h1>About Us</h1>
-              <!-- Additional content for the about us page -->
-            `;
-          }
-        }
-
-        customElements.define('about-us-page', AboutUsPage);
-
-        class AutomobilesPage extends HTMLElement {
-          constructor() {
-            super();
-          }
-
-          connectedCallback() {
-            this.innerHTML = `
-              <h1>Automobiles</h1>
-              <!-- Additional content and car details/pictures -->
-            `;
-          }
-        }
-
-        customElements.define('automobiles-page', AutomobilesPage);
-
-        class VehicleBookingPage extends HTMLElement {
-          constructor() {
-            super();
-          }
-
-          connectedCallback() {
-            this.innerHTML = `
-              <h1>Vehicle Booking</h1>
-              <!-- Additional content for the vehicle booking page -->
-            `;
-          }
-        }
-
-        customElements.define('vehicle-booking-page', VehicleBookingPage);
-
-        class TourAppointmentPage extends HTMLElement {
-          constructor() {
-            super();
-          }
-
-          connectedCallback() {
-            this.innerHTML = `
-              <h1>Tour Appointment</h1>
-              <!-- Additional content for the tour appointment page -->
-            `;
-          }
-        }
-
-        customElements.define('tour-appointment-page', TourAppointmentPage);
-    </script>
 </body>
 </html>
