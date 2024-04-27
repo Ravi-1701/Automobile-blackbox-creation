@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile Website</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header content, such as logo and navigation menu -->
+    </header>
+
+    <main>
+        <home-page></home-page>
+        <about-us-page></about-us-page>
+        <automobiles-page></automobiles-page>
+        <vehicle-booking-page></vehicle-booking-page>
+        <tour-appointment-page></tour-appointment-page>
+    </main>
+
+    <footer>
+        <!-- Footer content, such as copyright and contact information -->
+    </footer>
+
+    <script>
+        class HomePage extends HTMLElement {
+          constructor() {
+            super();
+          }
+
+          connectedCallback() {
+            this.innerHTML = `
+              <h1>Welcome to Our Automobile Website!</h1>
+              <!-- Additional content for the home page -->
+            `;
+          }
+        }
+
+        customElements.define('home-page', HomePage);
+
+        class AboutUsPage extends HTMLElement {
+          constructor() {
+            super();
+          }
+
+          connectedCallback() {
+            this.innerHTML = `
+              <h1>About Us</h1>
+              <!-- Additional content for the about us page -->
+            `;
+          }
+        }
+
+        customElements.define('about-us-page', AboutUsPage);
+
+        class AutomobilesPage extends HTMLElement {
+          constructor() {
+            super();
+          }
+
+          connectedCallback() {
+            this.innerHTML = `
+              <h1>Automobiles</h1>
+              <!-- Additional content and car details/pictures -->
+            `;
+          }
+        }
+
+        customElements.define('automobiles-page', AutomobilesPage);
+
+        class VehicleBookingPage extends HTMLElement {
+          constructor() {
+            super();
+          }
+
+          connectedCallback() {
+            this.innerHTML = `
+              <h1>Vehicle Booking</h1>
+              <!-- Additional content for the vehicle booking page -->
+            `;
+          }
+        }
+
+        customElements.define('vehicle-booking-page', VehicleBookingPage);
+
+        class TourAppointmentPage extends HTMLElement {
+          constructor() {
+            super();
+          }
+
+          connectedCallback() {
+            this.innerHTML = `
+              <h1>Tour Appointment</h1>
+              <!-- Additional content for the tour appointment page -->
+            `;
+          }
+        }
+
+        customElements.define('tour-appointment-page', TourAppointmentPage);
+    </script>
+</body>
+</html>
